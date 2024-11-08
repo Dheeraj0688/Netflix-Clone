@@ -5,9 +5,13 @@
     padding: 0;
 }
 
+body {
+    background-color: black;
+}
+
 .main {
     background-image: url(assets/images/bg.jpg);
-    height: 80vh;
+    height: 60vh;
     width: 100%;
     background-position: center center;
     background-size: max(1000px, 100vw);
@@ -15,9 +19,9 @@
 }
 
 .main .box {
-    height: 80vh;
+    height: 60vh;
     background-color: black;
-    opacity: 0.40;
+    opacity: 0.55;
     position: absolute;
     top: 0;
     width: 100%;
@@ -61,7 +65,7 @@ nav ul {
 
 .lowerText {
     font-size: 14px;
-    text-align: c;
+    text-align: center;
 }
 
 .hero h1 {
@@ -71,28 +75,240 @@ nav ul {
     text-align: center;
 }
 
-.getButton{
+.getButton {
     height: 38px;
     border-radius: 2px;
     width: 130px;
     background-color: red;
     color: white;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
 
 }
-.email{
+
+.email {
     height: 30px;
     width: 300px;
-    background-color: black;
-    border: 0.1px solid grey;
-    padding: 2px;
+    background-color: rgba(23, 23, 23, 0.5);
+    border: 0.5px solid rgba(246, 238, 238, 0.5);
+    padding: 3px 10px;
     border-radius: 2px;
+    font-size: 12px;
+    color: white;
+    margin-top: 30px;
 }
-.arrow{
+
+.arrow {
     color: white;
     align-self: center;
     justify-content: center;
 }
 
-.mainDiv{
-    
+.line {
+    height: 5px;
+    width: 100%;
+    background-color: rgb(99, 98, 98,0.3);
+}
+
+.nav-button {
+    padding: 3px;
+    width: 70px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.sign-in-button {
+    background-color: red;
+    color: white;
+    font-weight: 6000;
+}
+
+.english-button {
+    background-color: rgba(23, 23, 23, 0.5);
+    color: white;
+    border-style: none;
+    border: 1px solid rgba(246, 238, 238, 0.5);
+}
+
+.firstSec {
+    margin: 0;padding: 0;
+    display: flex;
+    max-width: 70vw;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    margin: 0px auto;
+    height: 50vh;
+}
+
+.firstSec img {
+    top: 75px;
+    width: 31vw;
+    height: 350px;
+    position: relative;
+    z-index: 1;
+}
+
+.firstSec video {
+    position: relative;
+    width: 320px;
+    left: 62px;
+    bottom: 190px;
+}
+
+.firstSec div :nth-child(1) {
+    font-size: 38px;
+    font-weight: bolder;
+}
+
+.firstSec div :nth-child(2) {
+    font-size: 24px;
+}
+
+.firstSec>div{
+    display :flex;
+    flex-direction: column;
+}
+
+.second img{
+    position: relative;
+    top: 0px;
+    height: 350px;
+}
+
+.fourth img{
+    height:300px;
+   position: relative;
+   top: 0px;
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 48px;
+}
+
+.faq {
+    background: black;
+    color: white;
+    padding: 34px;
+}
+
+.faqbox:hover {
+    background-color: #414141;
+    color: white;
+}
+
+.faqbox svg {
+    filter: invert(1);
+}
+
+.faqbox {
+    transition: all 1s ease-out;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    padding: 24px;
+    max-width: 60vw;
+    margin: 34px auto;
+    cursor: pointer;
+}
+
+footer {
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 60px;
+}
+
+footer .questions {
+    padding: 34px 0;
+}
+
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+
+
+
+@media screen and (max-width: 1300px) {
+
+    nav{
+        max-width: 90vw;
+    }
+
+    .first {
+        flex-wrap: wrap;
+    }
+
+    .secImg img {
+        width: 305px;
+    }
+
+    .secImg video {
+        width: 305px;
+    }
+
+    .hero> :nth-child(1) {
+        font-size: 32px;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 18px;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 18px;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .faq h2 {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    footer {
+        max-width: 90vw;
+        padding: 75px 0;
+    }
+
+    .footer-item{
+        align-items: center;
+    }
+ 
+
+}
+
+
+
+@media screen and (max-width: 1300px) {
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+}
+
+
+.footer a {
+    font-size: 14px;
+    color: white;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
 }
